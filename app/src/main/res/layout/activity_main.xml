@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/topfrag"
+        android:name="com.example.instapage.f_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_top" />
+
+    <fragment
+        android:id="@+id/midfrag"
+        android:name="com.example.instapage.middle_frag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        tools:layout="@layout/fragment_middle_frag" />
+
+
+    <fragment
+        android:id="@+id/botfrag"
+        android:name="com.example.instapage.bottom_frag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        tools:layout="@layout/fragment_bottom_frag" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<!-- fragment_top_row.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="f_top">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:context="top_row">
+
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="7"
+            android:text="@string/username"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp" />
+
+        <ImageView
+            android:id="@+id/backArrowImageView"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/settingicon"
+            android:contentDescription="@string/setting" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
